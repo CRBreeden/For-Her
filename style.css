@@ -1,0 +1,27 @@
+h1 {
+    width:500px;
+    margin: 0 auto;
+    background: gray;
+    text-align: center;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 15%;
+}
+.Yes{
+    width: 10%;
+    float: left;
+    margin-top: 100px;
+    margin-left: 500px;
+    background-color: lime;
+}
+.no{
+    width: 10%;
+    float: right;
+    margin-top: 100px;
+    margin-right: 500px;
+    background-color: red;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>For Her</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <main>
+    <h1>Date Wednesday night?</h1>
+    <img src="C:\Users\socce\OneDrive\Desktop\Gift Website\CuddleCats.gif" alt="Cuddle Cats" class="center">
+  </main>
+  <button onclick="YAY()" type="button" id='yes' class="Yes">YES!!</button>
+  <button onclick="Wrong()" type="button" id='no' class="no">No :(</button>
+
+  <script src="index.js"></script>
+  <script>
+    var yesClicks = 0;
+    var noClicks = 0;
+
+    function YAY() 
+    {
+        yesClicks++;
+      alert("Herro I come over after work preese!")
+    }
+
+    function Wrong() 
+    {
+      noClicks++;
+      document.getElementById('no').style.width = (100 - noClicks * 40) + 'px';
+      document.getElementById('no').style.height = (50 - noClicks * 20) + 'px';
+      document.getElementById('yes').style.width = (300 + noClicks * 10) + 'px';
+      document.getElementById('yes').style.height = (150 + noClicks * 5) + 'px';
+    }
+  </script>
+</body>
+</html>
